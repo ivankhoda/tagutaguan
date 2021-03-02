@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e1915ba4.chunk.css",
+    "main.js": "/static/js/main.eda25043.chunk.js",
+    "main.js.map": "/static/js/main.eda25043.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a96c4b1a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a96c4b1a.js.map",
+    "static/js/2.3728a3c2.chunk.js": "/static/js/2.3728a3c2.chunk.js",
+    "static/js/2.3728a3c2.chunk.js.map": "/static/js/2.3728a3c2.chunk.js.map",
+    "static/js/3.35551397.chunk.js": "/static/js/3.35551397.chunk.js",
+    "static/js/3.35551397.chunk.js.map": "/static/js/3.35551397.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e1915ba4.chunk.css.map": "/static/css/main.e1915ba4.chunk.css.map",
+    "static/js/2.3728a3c2.chunk.js.LICENSE.txt": "/static/js/2.3728a3c2.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Insanibu.b802102b.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a96c4b1a.js",
+    "static/js/2.3728a3c2.chunk.js",
+    "static/css/main.e1915ba4.chunk.css",
+    "static/js/main.eda25043.chunk.js"
+  ]
+}
