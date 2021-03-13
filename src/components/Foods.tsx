@@ -1,9 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 import * as React from "react";
-import foods from "../data/data";
-import useWindowPosition from "../hook/Hook";
-import { FoodCard } from "./FoodCard";
-import { Scroller } from "./Scrollers/Scroller";
+import { FoodCard, FoodProps } from "./FoodCard";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,9 +12,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "space-around",
 
-    [theme.breakpoints.down("sm")]: {
-      //flexDirection: "column",
-    },
+    [theme.breakpoints.down("sm")]: {},
   },
   expandContainer: {
     display: "flex",
@@ -30,25 +25,27 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Foods: React.FC = () => {
+type Props = {
+  items: FoodProps[];
+  handleAddToCart: (clickedItem: FoodProps) => void;
+};
+
+export const Foods: React.FC<Props> = ({ items, handleAddToCart }) => {
   const classes = useStyles();
-  const checked = useWindowPosition("header");
+
   return (
     <>
       <div className={classes.root} id="foods">
-        {foods
-          ? foods.map((food) => (
+        {items
+          ? items?.map((item) => (
               <FoodCard
-                key={food.id}
-                image={food.image}
-                name={food.name}
-                description={food.description}
-                checked={checked}
+                key={item.id}
+                item={item}
+                handleAddToCart={handleAddToCart}
               />
             ))
           : ""}
       </div>
-      <Scroller path={"about"} />
     </>
   );
 };

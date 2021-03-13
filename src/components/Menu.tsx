@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Menu: React.FC = () => {
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
       <h1 className={classes.title}>Menu</h1>

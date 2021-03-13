@@ -1,7 +1,9 @@
 import { makeStyles } from "@material-ui/core";
-import AddLocationIcon from "@material-ui/icons/AddLocation";
 import CallIcon from "@material-ui/icons/Call";
-import ChatIcon from "@material-ui/icons/Chat";
+import {
+  default as AddLocationIcon,
+  default as ChatIcon,
+} from "@material-ui/icons/Chat";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GoogleMapReact from "google-map-react";
 import * as React from "react";
@@ -64,7 +66,7 @@ export const Contacts: React.FC = () => {
   };
   //14.619814, 121.171937
   return (
-    <div id="contacts" className={classes.root}>
+    <article id="contacts" className={classes.root}>
       <h1 className={classes.title}>Contacts</h1>
       <div className={classes.contacts}>
         <div className={classes.tel}>
@@ -90,6 +92,6 @@ export const Contacts: React.FC = () => {
           </GoogleMapReact>
         </div>
       </div>
-    </div>
+    </article>
   );
 };

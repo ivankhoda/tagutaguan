@@ -1,16 +1,17 @@
 import * as React from "react";
-import { Foods } from "../Foods";
+import { FoodProps } from "../FoodCard";
 import { About } from "./AboutUs";
-import { Contacts } from "./Contacts";
 import { Franchise } from "./Franshise";
-
+type Props = {
+  item: FoodProps;
+  handleAddToCart: (clickedItem: FoodProps) => void;
+};
 export const Pages: React.FC = () => {
   return (
     <div>
-      <Foods />
       <About />
       <Franchise />
-      <Contacts />
+      {/* <Contacts /> */}
     </div>
   );
 };

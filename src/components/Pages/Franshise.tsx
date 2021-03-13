@@ -1,5 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 import * as React from "react";
+import { Scroller } from "../Scrollers/Scroller";
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: 100,
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 export const Franchise: React.FC = () => {
   const classes = useStyles();
   return (
-    <div id="franchise" className={classes.root}>
+    <article id="franchise" className={classes.root}>
       <h1 className={classes.title}>Join us. It's easy.</h1>
 
       <p className={classes.desc}></p>
@@ -39,6 +40,7 @@ export const Franchise: React.FC = () => {
         Our main adavntages: unique family brand, consistent growth, outstanding
         suppliers.
       </p>
-    </div>
+      <Scroller path={"contacts"} />
+    </article>
   );
 };
